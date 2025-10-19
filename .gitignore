@@ -1,0 +1,41 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external drives
+.Spotlight-V100
+.Trashes
+
+# macOS system metadata
+.fseventsd
+.metadata_never_index
+
+# Editor & IDE settings
+*.swp
+*~
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Optional: ignore local notes or drafts (if you don’t want them in git)
+drafts/
+notes/
+
+# Node modules (if you ever use tools like Markdown previewers that install dependencies)
+node_modules/
+
+# Python virtual envs (just in case you run scripts)
+venv/
+.env/
+
