@@ -1,7 +1,7 @@
 
 
 # Stablecoin Risk Assessment Framework (SRAF) – v0.1
-A layered, modular, experimental framework for assessing risk in stablecoin ecosystems across the entire stack from settlement layer to application layer.
+A layered, modular, experimental framework for assessing risk in stablecoin ecosystems across the entire stack from settlement layer to application layer. The objective of this framework is to assist in identifying areas of risk for participants in the stablecoing space.
 
 This model evaluates risk across the stablecoin stack defined as four layers:
  - Settlement Layer
@@ -10,8 +10,10 @@ This model evaluates risk across the stablecoin stack defined as four layers:
  - User Layer
 
 Risks are scored qualitively from Low to High as follows:  
-Score each question: **0 = Low risk**, **1 = Medium risk**, **2 = High risk**,
-If information is missing or unavailable, default to **2**.
+Score each question: **01= Low risk**, **1 = Medium risk**, **2 = High risk**,
+If information is missing or unavailable, default to **2** which emphsizes the complex nature of these echosystems and the risks of unknown factors in the stack. 
+
+Due to the complexity of the stack, quantitive measurements avoided, though the  framework could evolve to incorproate more analytical measuremeents for each are of risk. 
 
 ---
 
