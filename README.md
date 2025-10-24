@@ -10,7 +10,7 @@ This model evaluates risk across the stablecoin stack defined as four layers:
  - User Layer
 
 Risks are scored qualitively from Low to High as follows:  
-Score each question: **01= Low risk**, **1 = Medium risk**, **2 = High risk**,
+Score each question: **0 = Low risk**, **1 = Medium risk**, **2 = High risk**,
 If information is missing or unavailable, default to **2** which emphsizes the complex nature of these echosystems and the risks of unknown factors in the stack. 
 
 Due to the complexity of the stack, quantitive measurements avoided, though the  framework could evolve to incorproate more analytical measurements for each are of risk. 
@@ -18,101 +18,98 @@ Due to the complexity of the stack, quantitive measurements avoided, though the 
 ---
 
 ## 1. Settlement Layer  
-*The blockchain foundation on which stablecoins are issued and transacted.*
+The blockchain foundation on which stablecoins are issued and transacted. This Layer represents the underlying network that enforces finality for stablecoin transactions regardless of the Layer 1 vs Layer 2 rollup distinction.
 
 ### Technical Risks
-- Has the chain avoided major **downtime** or **consensus failures** in the past 12 months?  
-- Is there sufficient **client diversity** (multiple production-grade clients in use)?  
+- Has the chain avoided major ***protocol bugs or downtime*** - consensus (L1) or sequencer (L2) vulnerabilities halting or forking the chain in the past 12 months? 
+- Is there sufficient **node/client diversity** in the deployment to avodid correlated failure risk?  
 - Are **reorgs** rare and **finality** strong?  
 - Is **bridge dependence** minimized or diversified?
 
 ### Operational Risks
-- Is **RPC infrastructure** decentralized and diversified?  
-- Is the **validator set** sufficiently decentralized and distributed?  
+- Is **RPC infrastructure** sufficiently decentralized, diversified or distributed?  
+- Is the **validator or sequencer set** sufficiently decentralized, diversified or distributed? 
 - Is **security operations maturity** high (monitoring, code-signing, strong developer security practices)?
 - Has the chain been **operational on Mainnet** for more than two years. Less than one year scores 2, 1-3 years scores 1, greater than 3 years scores 0.
 
-### Governance Risks
+### Governance & Regulatory Risks
 - Is **protocol governance** resilient to capture or manipulation?  
-- Is **validator collusion or censorship** risk mitigated?
-
-### Regulatory Risks
-- Are there safeguards against **censorship under legal pressure** (e.g., OFAC-sanctioned addresses)?
+- Is **validator/sequencer collusion or censorship** risk mitigated?
+- Is there risk of **censorship** due to legal/political pressure?
 
 ---
 
 ## 2. Issuance Layer  
-*Where stablecoins are created, collateralized, governed, and redeemed.*
+Where stablecoins are created, collateralized, governed, and redeemed.
 
 ### Technical Risks
 - Are contracts recently **audited** and is there an active **bug bounty** program?  
 - Is the **upgrade process** transparent (timelocks, multisig, clear governance)?  
-- Are **admin keys** constrained and secured (e.g., HSM, multisig)?  
+- Are **admin keys** constrained and secured? (this is a significant operational component that is hard to measure, so it's worth noting any historical administrative incidents)
 - Is **native vs. wrapped issuance** clearly documented and consistent across chains?
 
 ### Operational Risks
-- Is **collateral quality** conservative (cash and short-term Treasuries) vs. risky assets?  
+- Is **collateral quality** conservative and well defined (i.e cash and short-term Treasuries vs. risky or volitile assets)?  
 - Are reserves **diversified across custodians and geographies**?  
 - Is **rehypothecation** avoided or clearly disclosed and limited?  
 - Can **redemptions** reliably occur at par even under stress?  
 - Are **attestations/audits** independent, recurring, and comprehensive?
 
-### Governance Risks
+### Governance & Regulatory Risks
 - Is the **issuer** transparent, well-governed, and reputable (structure, backers, track record)?  
-- Does the issuer leverage **regulatory frameworks** (trust charters, Genius Act registration) for assurance?
+- Does the issuer leverage **regulatory frameworks** such as trust charters or tracking to Genius Act registration (when defined) for assurance?
+- Is **blacklisting/freezing authority** transparent and controlled?  
+- Is **jurisdictional exposure** diversified across geographies and/or juristcition regimes?
 
 ### Market Risks
 - Is the **collateralization model** conservative (1:1) rather than algorithmic or complex?
 
-### Regulatory Risks
-- Is **blacklisting/freezing authority** transparent and controlled?  
-- Is **jurisdictional exposure** diversified (not dependent on a single enforcement regime)?
+
 
 ---
 
 ## 3. Application Layer  
-*Encompasses all applications, infrastructure, and supply-chain dependencies — wallets, exchanges, APIs, SDKs, DeFi protocols, on/off-ramps, bridges, and third-party services.*
+Encompasses all applications, infrastructure, and supply-chain dependencies such as wallets, exchanges, APIs, SDKs, DeFi protocols, on/off-ramps, bridges, and third-party services.
 
 ### Technical Risks
 - Are **smart contracts** secure and covered by recent audits?  
 - Are **oracles and data feeds** robust and monitored for manipulation?  
 - Are **SDKs/APIs** vetted and supply-chain risk managed?  
 - Are **bridges** secure, with fallback options available?
+- Is **user interface infrastructure** secured with a process to minimize risk of man-in-the-middle or phishing attacks.
 
 ### Operational Risks
 - Is **security operations maturity** high across the application ecosystem?  
 - Are **third-party dependencies** evaluated for security posture and risk?  
-- Are **on/off-ramps** solvent, compliant, and well-controlled?  
-- Are **custodians and sub-custodians** solvent with segregated funds?
+- Are **on/off-ramps** solvent, compliant, reputable and well-controlled?  
+- Are **custodians** diversified, reputable, solvent? Are fundes segregated?
 
-### Governance Risks
+### Governance & Regulatory Risks
 - Are **governance and upgrade keys** sufficiently decentralized?  
-- Are **private keys** for operational and developer use secured?
+- IS **regulatory contamination** risk from unregulated assets well defined and understood?  
+- Is the **user interface** accurate and resistant to spoofing or mislabeling?
 
 ### Market Risks
 - Is there sufficient **liquidity** to avoid slippage and fragmentation?  
 - Is **wrapped-asset exposure** clearly understood and minimized?  
 - Is **composability risk** with risky DeFi protocols limited?
 
-### Regulatory Risks
-- Are there controls against **regulatory contamination** from unregulated assets?  
-- Is the **user interface** accurate and resistant to spoofing or mislabeling?
 
 ---
 
 ## 4. User Layer  
-*Where human behavior, wallet security, and user understanding determine realized risk.*
+Where human behavior, wallet security, and user understanding impacts net risk.
 
 ### Technical Risks
-- Are **interfaces** resistant to spoofing, phishing, and impersonation?
+- Is **user interface** resistant to spoofing, phishing, and impersonation?
 
 ### Operational Risks
-- Are **private keys** securely stored (e.g., hardware, secure enclave)?  
-- Are **backup and recovery procedures** clear and functional?  
-- Are **hot wallet risks** mitigated (approval hygiene, limited permissions)?  
-- Is **user education** effective against phishing and social engineering?
+- Are **private keys** securely stored?  
+- Are **backup and recovery procedures** clear, functional with appropriate level of user education?  
+- Are **hot wallet and signing risks** mitigated (clear approval process, limited permissions, revocation options, etc)? 
+- Is **user education** effective against phishing, social engineering and private key/seedphrase disclosure risk?
 
-### Regulatory Risks
+### Governance & Regulatory Risks
 - Are **geo-fencing** and usage constraints clearly communicated and enforced?
 
 ---
