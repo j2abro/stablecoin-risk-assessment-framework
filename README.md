@@ -13,7 +13,7 @@ Risks are scored qualitively from Low to High as follows:
 Score each question: **01= Low risk**, **1 = Medium risk**, **2 = High risk**,
 If information is missing or unavailable, default to **2** which emphsizes the complex nature of these echosystems and the risks of unknown factors in the stack. 
 
-Due to the complexity of the stack, quantitive measurements avoided, though the  framework could evolve to incorproate more analytical measuremeents for each are of risk. 
+Due to the complexity of the stack, quantitive measurements avoided, though the  framework could evolve to incorproate more analytical measurements for each are of risk. 
 
 ---
 
@@ -29,7 +29,8 @@ Due to the complexity of the stack, quantitive measurements avoided, though the 
 ### Operational Risks
 - Is **RPC infrastructure** decentralized and diversified?  
 - Is the **validator set** sufficiently decentralized and distributed?  
-- Is **security operations maturity** high (monitoring, code-signing, developer security practices)?
+- Is **security operations maturity** high (monitoring, code-signing, strong developer security practices)?
+- Has the chain been **operational on Mainnet** for more than two years. Less than one year scores 2, 1-3 years scores 1, greater than 3 years scores 0.
 
 ### Governance Risks
 - Is **protocol governance** resilient to capture or manipulation?  
