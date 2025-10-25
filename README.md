@@ -116,18 +116,24 @@ Where human behavior, wallet security, and user understanding impacts net risk.
 
 ## Scoring & Interpretation
 
-Some beta scoring might be to set some ranges as follows, after normalizing the scores to 100.
-| Score | Interpretation |
-|-------|------------------|
-| **0 – 39** | Low Risk – Strong posture; still requires continuous monitoring. |
-| **40 – 69** | Medium Risk – Partial controls; use-case dependent; further due diligence required. |
-| **70 – 100** | High Risk – Significant vulnerabilities; unsuitable for most uses. |
+Quantitative scoring can obscure the layered complexity of stablecoin systems; this framework is designed to highlight areas of relative risk and maturity rather than assign precise numerical values. Scoring for each question is scored qualitatively on a high, medium, low model: 
 
-**Consider weighting scores by category:**  
-- Settlement: 30%  
-- Issuance: 40%  
-- Application: 20%  
-- User: 10%
+- **0 = Low Risk** – Strong posture, mature controls, or high transparency.  
+- **1 = Medium Risk** – Partial controls, evolving maturity, or limited visibility.  
+- **2 = High Risk** – Significant vulnerabilities, opacity, or known weaknesses.  
+
+To assess the relative risk of each category (e.g., Settlement, Issuance, Application, or User Layer) and to identify areas of outsized risk, averaging the individual question scores to produce a **category-level score** between 0–2 can be considered. For example each category could be considered as follows:
+
+| Category Score | Interpretation |
+|----------------|----------------|
+| **0.0 – 0.6** | **Low Risk** – Strong posture; well-defined controls and transparency. |
+| **0.7 – 1.3** | **Medium Risk** – Partial controls; acceptable with further due diligence. |
+| **1.4 – 2.0** | **High Risk** – Significant vulnerabilities or uncertainty. |
+
+This produces a qualitative “risk grade” per category. You may optionally average all category scores to produce an overall rating.  
+
+**Future Considerations:**  
+- Weighting by category (e.g., Issuance 40%, Settlement 30%, Application 20%, User 10%) could also be considered in the future.
 
 ---
 
