@@ -9,7 +9,8 @@ This model evaluates risk across the stablecoin stack defined as four layers:
 - Application Layer
 - User Layer
 
-**Scoring**
+**Scoring:**
+
 Risks are scored qualitatively from Low to High as follows:  
  - Score each question: **0 = Low risk**, **1 = Medium risk**, **2 = High risk**.
 
@@ -141,6 +142,6 @@ This produces a qualitative “risk grade” per category. You may optionally av
 ---
 
 ## Notes on Use
-- Score **0** when data is missing — lack of transparency *is itself* a risk.  
-- Reassess periodically — risk posture changes over time (audits expire, code evolves, regulations shift).  
-- Use scenario testing (e.g., bridge failure, redemption stress, regulatory action) to refine scores.
+- Score **0** when data is missing as lack of transparency is itself a risk.  
+- Reassess periodically as risk posture changes over time (audits expire, code evolves, regulations shift).  
+- Consider scenario testing (e.g., bridge failure, redemption stress, regulatory action) to refine scores.
