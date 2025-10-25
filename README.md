@@ -4,10 +4,10 @@
 A layered, modular, experimental framework for assessing risk in stablecoin ecosystems across the entire stack from settlement layer to application layer. The objective of this framework is to assist in identifying areas of risk for participants in the stablecoing ecosystem.
 
 This model evaluates risk across the stablecoin stack defined as four layers:
-- [ ] Settlement Layer
-- [ ] Issuance Layer
-- [ ] Application Layer
-- [ ] User Layer
+- Settlement Layer
+- Issuance Layer
+- Application Layer
+- User Layer
 
 Risks are scored qualitatively from Low to High as follows:  
 Score each question: **0 = Low risk**, **1 = Medium risk**, **2 = High risk**,
