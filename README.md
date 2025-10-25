@@ -1,6 +1,6 @@
 
 
-# Stablecoin Risk Assessment Framework (SRAF) – v0.1
+# Stablecoin Risk Assessment Framework – v0.1
 A layered, modular, experimental framework for assessing risk in stablecoin ecosystems across the entire stack from settlement layer to application layer. The objective of this framework is to assist in identifying areas of risk for participants in the stablecoing ecosystem.
 
 This model evaluates risk across the stablecoin stack defined as four layers:
