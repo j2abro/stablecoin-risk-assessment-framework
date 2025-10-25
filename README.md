@@ -9,8 +9,9 @@ This model evaluates risk across the stablecoin stack defined as four layers:
 - Application Layer
 - User Layer
 
+**Scoring**
 Risks are scored qualitatively from Low to High as follows:  
-Score each question: **0 = Low risk**, **1 = Medium risk**, **2 = High risk**.
+ - Score each question: **0 = Low risk**, **1 = Medium risk**, **2 = High risk**.
 
 If information is missing or unavailable, default to **2** which emphsizes the complex nature of these echosystems and the risks of unknown factors inherent in the stack. 
 
