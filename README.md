@@ -137,7 +137,8 @@ To assess the relative risk of each category (e.g., Settlement, Issuance, Applic
 This produces a qualitative “risk grade” per category. You may optionally average all category scores to produce an overall rating.  
 
 **Future Considerations:**  
-- Weighting by category (e.g., Issuance 40%, Settlement 30%, Application 20%, User 10%) could also be considered in the future.
+
+Weighting by category (e.g., Issuance 40%, Settlement 30%, Application 20%, User 10%) could also be considered in the future.
 
 ---
 
