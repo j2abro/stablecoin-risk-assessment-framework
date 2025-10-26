@@ -1,7 +1,9 @@
 
 
 # Stablecoin Risk Assessment Framework – v0.1
-A layered, modular, experimental framework for assessing risk in stablecoin ecosystems across the entire stack from settlement layer to application layer. The objective of this framework is to assist in identifying areas of risk for participants in the stablecoing ecosystem.
+A layered, modular, experimental framework for assessing risk in stablecoin ecosystems across the entire stack from the settlement layer to the application layer. The objective of this framework is to help participants identify and understand areas of systemic risk within the stablecoin ecosystem.
+
+The framework is built on the thesis that risk in stablecoin systems must be evaluated holistically, as vulnerabilities at lower layers can cascade upward through the stack from settlement and issuance, to applications, and ultimately to the end user.
 
 This model evaluates risk across the stablecoin stack defined as four layers:
 - Settlement Layer
